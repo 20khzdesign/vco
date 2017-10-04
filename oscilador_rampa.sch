@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 4
 Title "Voltage Controlled Oscillator"
 Date ""
 Rev ""
@@ -69,10 +69,10 @@ F 3 "" H 4200 4600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R?
+L R R18
 U 1 1 59D4F972
 P 5400 3650
-F 0 "R?" V 5480 3650 50  0000 C CNN
+F 0 "R18" V 5480 3650 50  0000 C CNN
 F 1 "R" V 5400 3650 50  0000 C CNN
 F 2 "" V 5330 3650 50  0001 C CNN
 F 3 "" H 5400 3650 50  0001 C CNN
@@ -146,10 +146,10 @@ F 3 "" H 6000 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L POT P?
+L POT P9
 U 1 1 59D4F9A3
 P 3150 2850
-F 0 "P?" V 2975 2850 50  0000 C CNN
+F 0 "P9" V 2975 2850 50  0000 C CNN
 F 1 "2k2" V 3050 2850 50  0000 C CNN
 F 2 "" H 3150 2850 50  0001 C CNN
 F 3 "" H 3150 2850 50  0001 C CNN
@@ -212,7 +212,7 @@ F 3 "" H 4000 2400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text HLabel 2800 3700 0    60   Input ~ 0
-currexp
+exp
 Text HLabel 2800 3950 0    60   Input ~ 0
 GND
 Text HLabel 6050 1650 1    60   Input ~ 0
@@ -224,13 +224,9 @@ Text HLabel 4600 2800 1    60   Input ~ 0
 Text HLabel 5000 5000 3    60   Input ~ 0
 -15V
 Wire Wire Line
-	4200 3550 4200 3650
+	4200 3550 4200 4450
 Wire Wire Line
-	4200 3650 4200 4450
-Wire Wire Line
-	4200 3650 4550 3650
-Wire Wire Line
-	4550 3650 5250 3650
+	4200 3650 5250 3650
 Wire Wire Line
 	4550 3650 4550 3750
 Connection ~ 4200 3650
@@ -240,36 +236,24 @@ Wire Wire Line
 Wire Wire Line
 	4550 4150 4700 4150
 Wire Wire Line
-	5000 4350 5000 4400
+	5000 4350 5000 4450
 Wire Wire Line
-	5000 4400 5000 4450
+	5000 4750 5000 5000
 Wire Wire Line
-	5000 4750 5000 4800
-Wire Wire Line
-	5000 4800 5000 5000
-Wire Wire Line
-	5550 3650 6000 3650
-Wire Wire Line
-	6000 3650 6050 3650
+	5550 3650 6050 3650
 Wire Wire Line
 	6050 3450 6050 2800
 Wire Wire Line
-	6050 1650 6050 2000
-Wire Wire Line
-	6050 2000 6050 2500
+	6050 1650 6050 2500
 Wire Wire Line
 	5750 2000 5750 2900
-Wire Wire Line
-	5750 3200 5750 3800
 Wire Wire Line
 	6000 3950 6000 3650
 Connection ~ 6000 3650
 Wire Wire Line
 	5000 2950 5000 3950
 Wire Wire Line
-	4200 2950 4600 2950
-Wire Wire Line
-	4600 2950 5000 2950
+	4200 2950 5000 2950
 Wire Wire Line
 	4200 2950 4200 3150
 Wire Wire Line
@@ -281,9 +265,7 @@ Wire Wire Line
 	5000 4400 7400 4400
 Connection ~ 5000 4400
 Wire Wire Line
-	5750 4250 6000 4250
-Wire Wire Line
-	6000 4250 6150 4250
+	5750 4250 6150 4250
 Wire Wire Line
 	6150 4250 6150 4100
 Wire Wire Line
@@ -292,13 +274,9 @@ Wire Wire Line
 	5750 4100 5750 4250
 Connection ~ 6000 4250
 Wire Wire Line
-	3150 2500 3150 2600
+	3150 2500 3150 2700
 Wire Wire Line
-	3150 2600 3150 2700
-Wire Wire Line
-	3150 2600 3350 2600
-Wire Wire Line
-	3350 2600 3500 2600
+	3150 2600 3500 2600
 Connection ~ 3150 2600
 Wire Wire Line
 	3300 2850 3350 2850
@@ -311,11 +289,7 @@ Connection ~ 4600 2950
 Wire Wire Line
 	3150 2200 3150 2000
 Wire Wire Line
-	3150 2000 3450 2000
-Wire Wire Line
-	3450 2000 5750 2000
-Wire Wire Line
-	5750 2000 6050 2000
+	3150 2000 6050 2000
 Connection ~ 6050 2000
 Wire Wire Line
 	3500 2000 3500 2200
@@ -331,9 +305,7 @@ Wire Wire Line
 Wire Wire Line
 	7400 2400 4150 2400
 Wire Wire Line
-	3150 3000 3150 3350
-Wire Wire Line
-	3150 3350 3150 3700
+	3150 3000 3150 3700
 Wire Wire Line
 	3150 3700 2800 3700
 Wire Wire Line
@@ -346,4 +318,7 @@ Wire Wire Line
 	3900 3350 3150 3350
 Connection ~ 3150 3350
 Connection ~ 5750 2000
+Wire Wire Line
+	5750 3200 5750 3800
+Connection ~ 5750 3650
 $EndSCHEMATC
