@@ -1,0 +1,21 @@
+volt to octave 
+
+
+.include ../../../spice/LM741.cir
+.model QMOD1 npn 
+
+Vp p 0 DC 12V
+Vn n 0 DC -12V
+Vin in 0 DC 0.1V
+
+rref  p     1    1.5M
+r3    e     2    2.2k
+rt    out   out2 10k
+
+c1    1     2    30p
+
+q1    1     in    e    QMOD1
+q2    out   0     e    QMOD1
+
+X2    0     1    p   n    2    LM741
+X3    0     out  p   n   out2    LM741
