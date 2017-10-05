@@ -107,8 +107,8 @@ $EndSheet
 $Sheet
 S 5600 1550 1100 1250
 U 59D64E85
-F0 "sawtooh-pwm" 60
-F1 "sawtooh2pwm.sch" 60
+F0 "sawtooh-pulse" 60
+F1 "sawtooh2pulse.sch" 60
 F2 "+15V" I L 5600 2150 60 
 F3 "-15" I L 5600 2300 60 
 F4 "GND" I L 5600 2600 60 
