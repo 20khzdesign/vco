@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 7
 Title "Voltage Controlled Oscillator"
 Date ""
 Rev ""
@@ -218,7 +218,7 @@ GND
 Text HLabel 6050 1650 1    60   Input ~ 0
 5V
 Text HLabel 7400 4400 2    60   Output ~ 0
-ramp
+sawtooh
 Text HLabel 4600 2800 1    60   Input ~ 0
 +15V
 Text HLabel 5000 5000 3    60   Input ~ 0

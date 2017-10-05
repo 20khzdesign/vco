@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 7
 Title "Voltage Controlled Oscillator"
 Date ""
 Rev ""
@@ -49,19 +49,19 @@ $EndDescr
 $Sheet
 S 5650 2600 1100 1250
 U 59D4DFBE
-F0 "Oscilador rampa" 60
-F1 "oscilador_rampa.sch" 60
+F0 "sawtooh oscillator" 60
+F1 "sawtooh_osc.sch" 60
 F2 "exp" I L 5650 2850 60 
 F3 "GND" I L 5650 3700 60 
 F4 "5V" I L 5650 3550 60 
-F5 "ramp" O R 6750 2850 60 
+F5 "sawtooh" O R 6750 2850 60 
 F6 "+15V" I L 5650 3250 60 
 F7 "-15V" I L 5650 3400 60 
 $EndSheet
 $Sheet
 S 3850 2600 1100 1250
 U 59D54B94
-F0 "Conversor exponencial" 60
+F0 "exponential converter" 60
 F1 "expconverter.sch" 60
 F2 "GND" I L 3850 3700 60 
 F3 "KOV" I L 3850 2850 60 
@@ -72,14 +72,48 @@ F7 "+15V" I L 3850 3400 60
 F8 "-15V" I L 3850 3550 60 
 $EndSheet
 $Sheet
-S 7300 2600 1100 1250
+S 7250 2250 1100 1250
 U 59D5DE5D
-F0 "Rampa-Triángulo" 60
-F1 "ramp2triangle.sch" 60
-F2 "+15V" I L 7300 3250 60 
-F3 "-15V" I L 7300 3400 60 
-F4 "GND" I L 7300 3700 60 
-F5 "ramp" I L 7300 2850 60 
-F6 "triang" O R 8400 2850 60 
+F0 "sawtooh-triangle" 60
+F1 "sawtooh2triangle.sch" 60
+F2 "+15V" I L 7250 2900 60 
+F3 "-15V" I L 7250 3050 60 
+F4 "GND" I L 7250 3350 60 
+F5 "sawtooh" I L 7250 2500 60 
+F6 "triang" O R 8350 2500 60 
+$EndSheet
+$Sheet
+S 8600 2250 1100 1250
+U 59D6007F
+F0 "sawtooh-sawtooh spaced" 60
+F1 "sawtooh2sawtoothspaced.sch" 60
+F2 "+15V" I L 8600 2900 60 
+F3 "-15V" I L 8600 3050 60 
+F4 "GND" I L 8600 3350 60 
+F5 "sawspaced" O R 9700 2500 60 
+F6 "sawtooh" I L 8600 2500 60 
+$EndSheet
+$Sheet
+S 8600 3700 1100 1250
+U 59D627FD
+F0 "sawtooh-sine" 60
+F1 "sawtook2sine.sch" 60
+F2 "+15V" I L 8600 4350 60 
+F3 "-15V" I L 8600 4500 60 
+F4 "GND" I L 8600 4800 60 
+F5 "sawtooh" I L 8600 3950 60 
+F6 "sine" O R 9700 3950 60 
+$EndSheet
+$Sheet
+S 7250 3750 1100 1250
+U 59D64E85
+F0 "sawtooh-pwm" 60
+F1 "sawtooh2pwm.sch" 60
+F2 "+15V" I L 7250 4350 60 
+F3 "-15" I L 7250 4500 60 
+F4 "GND" I L 7250 4800 60 
+F5 "sawtooh" I L 7250 3950 60 
+F6 "PWM" I L 7250 4100 60 
+F7 "pulse" O R 8350 3950 60 
 $EndSheet
 $EndSCHEMATC
