@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title "Voltage Controlled Oscillator"
 Date ""
 Rev ""
@@ -105,15 +105,29 @@ F5 "sawtooh" I L 8600 3950 60
 F6 "sine" O R 9700 3950 60 
 $EndSheet
 $Sheet
-S 7250 3750 1100 1250
+S 7250 3700 1100 1250
 U 59D64E85
 F0 "sawtooh-pwm" 60
 F1 "sawtooh2pwm.sch" 60
-F2 "+15V" I L 7250 4350 60 
-F3 "-15" I L 7250 4500 60 
-F4 "GND" I L 7250 4800 60 
-F5 "sawtooh" I L 7250 3950 60 
-F6 "PWM" I L 7250 4100 60 
-F7 "pulse" O R 8350 3950 60 
+F2 "+15V" I L 7250 4300 60 
+F3 "-15" I L 7250 4450 60 
+F4 "GND" I L 7250 4750 60 
+F5 "sawtooh" I L 7250 3900 60 
+F6 "PWM" I L 7250 4050 60 
+F7 "pulse" O R 8350 3900 60 
+$EndSheet
+$Sheet
+S 5150 4650 1100 1250
+U 59D645C5
+F0 "wave mixer" 60
+F1 "wavemixer.sch" 60
+F2 "GND" I L 5150 5750 60 
+F3 "pulse" I L 5150 4900 60 
+F4 "sawtooth" I L 5150 5200 60 
+F5 "sawtoohspaced" I L 5150 5050 60 
+F6 "triangular" I L 5150 5350 60 
+F7 "sine" I L 5150 5500 60 
+F8 "EOS" O R 6250 4900 60 
+F9 "IOS" O R 6250 5050 60 
 $EndSheet
 $EndSCHEMATC
