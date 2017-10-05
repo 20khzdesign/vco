@@ -72,9 +72,14 @@ F7 "+15V" I L 3850 3400 60
 F8 "-15V" I L 3850 3550 60 
 $EndSheet
 $Sheet
-S 7300 1950 1050 1100
+S 7400 1750 1100 1250
 U 59D5DE5D
 F0 "Rampa-Triángulo" 60
 F1 "ramp2triangle.sch" 60
+F2 "+15V" I L 7400 2400 60 
+F3 "-15V" I L 7400 2550 60 
+F4 "GND" I L 7400 2850 60 
+F5 "ramp" I L 7400 2000 60 
+F6 "triang" O R 8500 2000 60 
 $EndSheet
 $EndSCHEMATC

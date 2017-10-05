@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title "Voltage Controlled Oscillator"
 Date ""
 Rev ""
@@ -70,5 +70,16 @@ F5 "FM" I L 3850 3150 60
 F6 "exp" O R 4950 2850 60 
 F7 "+15V" I L 3850 3400 60 
 F8 "-15V" I L 3850 3550 60 
+$EndSheet
+$Sheet
+S 7300 2600 1100 1250
+U 59D5DE5D
+F0 "Rampa-Triángulo" 60
+F1 "ramp2triangle.sch" 60
+F2 "+15V" I L 7300 3250 60 
+F3 "-15V" I L 7300 3400 60 
+F4 "GND" I L 7300 3700 60 
+F5 "ramp" I L 7300 2850 60 
+F6 "triang" O R 8400 2850 60 
 $EndSheet
 $EndSCHEMATC
