@@ -31,6 +31,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:vco
 LIBS:vco-cache
 EELAYER 25 0
 EELAYER END
@@ -214,19 +215,13 @@ $EndComp
 Text HLabel 5000 6000 0    60   Input ~ 0
 GND
 Wire Wire Line
-	5000 6000 5300 6000
-Wire Wire Line
-	5300 6000 6750 6000
-Wire Wire Line
-	6750 6000 8300 6000
+	5000 6000 8300 6000
 Wire Wire Line
 	8300 6000 8300 5600
 Wire Wire Line
 	8300 5050 8300 5300
 Wire Wire Line
-	8150 5050 8300 5050
-Wire Wire Line
-	8300 5050 8750 5050
+	8150 5050 8750 5050
 Connection ~ 7650 5050
 Connection ~ 6750 4550
 Wire Wire Line
@@ -234,9 +229,7 @@ Wire Wire Line
 Wire Wire Line
 	6750 4950 6850 4950
 Wire Wire Line
-	7450 5050 7650 5050
-Wire Wire Line
-	7650 5050 7850 5050
+	7450 5050 7850 5050
 Wire Wire Line
 	7650 4950 7650 5050
 Wire Wire Line
@@ -251,21 +244,11 @@ Wire Wire Line
 	6550 5550 6350 5550
 Connection ~ 6550 4550
 Wire Wire Line
-	6550 3550 6550 4050
-Wire Wire Line
-	6550 4050 6550 4550
-Wire Wire Line
-	6550 4550 6550 5050
-Wire Wire Line
-	6550 5050 6550 5550
+	6550 3550 6550 5550
 Wire Wire Line
 	6550 5050 6350 5050
 Wire Wire Line
-	6350 4550 6550 4550
-Wire Wire Line
-	6550 4550 6750 4550
-Wire Wire Line
-	6750 4550 7650 4550
+	6350 4550 7650 4550
 Wire Wire Line
 	6750 5150 6850 5150
 Wire Wire Line
@@ -283,15 +266,7 @@ Wire Wire Line
 Wire Wire Line
 	5300 5650 5450 5650
 Wire Wire Line
-	5300 3650 5300 4150
-Wire Wire Line
-	5300 4150 5300 4650
-Wire Wire Line
-	5300 4650 5300 5150
-Wire Wire Line
-	5300 5150 5300 5650
-Wire Wire Line
-	5300 5650 5300 6000
+	5300 3650 5300 6000
 Connection ~ 5300 6000
 Wire Wire Line
 	5450 5150 5300 5150
